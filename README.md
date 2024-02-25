@@ -50,8 +50,6 @@ Mit dem berechneten radialen Profil (Option wird automatisch gechecked) wird ein
 
 ### Settings
 Kleinere Schalter zum Beeinflussen der Hauptfunktionen
-- Write pickle file  
-Schreiben einer PKL Datei des gedebayerten Bildes zum schnelleren Ausführen darauffolgender Läufe
 - Histogram of largest circle  
 Das Histogramm eines Flats wird normalerweise durch das rechteckige Beschneiden beeinflusst. Mit dieser Option wird das Histogramm nur für den größtmöglichen Kreis im Bild berechnet.
 - Extrapolate inside max  
@@ -68,7 +66,5 @@ Auswählen der verwendeten Statistik zur Berechnung des radialen Profils. Auf ei
 Die Berechnung des radialen Profils für ein 24 MP Bild kann einige Zeit dauern, obwohl eine so große Auflösung gar nicht nötig ist. Deshalb kann mit dieser Option die Statistik mit einem verkleinerten Bild berechnet werden. Wichtig: Die Verkleinerung spielt nur für die statistischen Funktionen (Pixelmap, Histogramm, radiales Profil) eine Rolle, alle ausgegebenen Bilder haben aber immer stets die gleiche Größe wie das Ursprungsbild! 
 
 ### Troubleshooting
-- Bisher nur mit Sony ARW Bildern getestet. Bei Problemen mit anderen Formaten mir gerne Testbilder schicken.
-- Bisher nur auf RGGB-Pattern ausgelegt. Bei Bedarf baue ich gerne eine Option für andere Pattern ein.
-- Mit zu hohem Bias-Wert kann es zu Problemen kommen. Eventuell mal ohne Bias (0) testen. Als Richtwert: Bei meiner Sony A7 II liegt der Bias bei 512.
+- Mit zu hohem Bias-Wert kann es zu Problemen kommen. Eventuell mal ohne Bias (0) testen. Als Richtwert: Bei meiner Sony A7 II liegt der Bias der Rohbilder bei 512.
 - Ein Gradient im Bild hebelt das Sigma-Clipping der radialen Profile aus. Bei unschönen Profilen unbedingt "Correct gradient" einschalten!
